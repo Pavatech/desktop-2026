@@ -1,23 +1,34 @@
-/* Remove as margens padrão da página */
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+.ab{
+   text-align: center;
+}
+.cdf{
+    text-align: center;
+}
+.g{
+    text-align: center;
 }
 
-/* Centraliza os itens no meio da tela */
-.mobile-center {
-  display: flex;
-  flex-direction: column; /* Empilha os h1 um embaixo do outro */
-  justify-content: center; /* Centraliza verticalmente */
-  align-items: center; /* Centraliza horizontalmente */
-  min-height: 100vh; /* Ocupa 100% da altura da tela */
-  background-color: #f4f4f9; /* Cor de fundo opcional para contraste */
+@media(min-width: 768px){
+    .cdf{
+        display: flex;
+        background-color:green;
+        justify-content: space-around;
+    }
+    .g{
+        background-color: blueviolet;
+    }
 }
 
-/* Estilo opcional para os textos */
-.mobile-center h1 {
-  margin: 10px 0;
-  color: #333;
+@media( min-width: 1024px){
+    .ab{
+        display: flex;
+        background-color: aqua;
+        justify-content: space-around;
+    }
+    .cdf{
+        background-color: antiquewhite;
+    }
+    .g{
+        background-color: red;
+    }
 }
